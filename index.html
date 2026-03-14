@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU CAN TECHNOLOGIES | Software & Development</title>
+    <meta name="description" content="YOU CAN TECHNOLOGIES - Empowering your digital transformation with cutting-edge software development, web applications, and AI solutions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="YOU CAN TECHNOLOGIES" class="logo-img navbar-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display: none; align-items: center; gap: 0.75rem;">
+                    <span class="logo-icon"><i class="fa-solid fa-microchip" style="color: var(--primary);"></i></span>
+                    <span class="logo-text" style="font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem;">YOU CAN <span style="color: var(--primary);">TECHNOLOGIES</span></span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Next-Gen Software Agency</div>
+                <h1 class="hero-title">
+                    We Build <span class="text-gradient">Digital Experiences</span> That Matter
+                </h1>
+                <p class="hero-subtitle">
+                    YOU CAN TECHNOLOGIES transforms bold ideas into exceptional software. We specialize in web development, mobile applications, and enterprise software solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn-primary btn-large">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#portfolio" class="btn btn-outline btn-large">View Portfolio</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window glass-panel">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <div class="window-title">main.js</div>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">import</span> { Future } <span class="keyword">from</span> <span class="string">'@youcan/tech'</span>;
+
+<span class="keyword">const</span> <span class="variable">company</span> = <span class="keyword">new</span> <span class="function">Company</span>({
+  name: <span class="string">'YOU CAN TECHNOLOGIES'</span>,
+  mission: <span class="string">'Innovate & Elevate'</span>
+});
+
+<span class="keyword">async function</span> <span class="function">buildAwesomeProduct</span>(idea) {
+  <span class="keyword">const</span> design = <span class="keyword">await</span> <span class="variable">company</span>.<span class="function">design</span>(idea);
+  <span class="keyword">const</span> product = <span class="keyword">await</span> <span class="variable">company</span>.<span class="function">develop</span>(design);
+  
+  <span class="keyword">return</span> product.<span class="function">launch</span>();
+}
+
+<span class="comment">// Make it happen</span>
+<span class="function">buildAwesomeProduct</span>(yourVision);<span class="cursor">_</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our <span class="text-gradient">Expertise</span></h2>
+                <p class="section-description">We provide end-to-end development services to help your business grow and thrive in the digital landscape.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom, scalable, and secure web applications built with modern frameworks like React, Vue, and Next.js.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile experiences for iOS and Android that users love.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud Architecture</h3>
+                    <p>Robust cloud infrastructure and DevOps pipelines on AWS, Azure, and Google Cloud.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent solutions that automate processes and provide deep insights from your data.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that enhance user engagement and drive conversions.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security audits and implementation to protect your digital assets.</p>
+                    <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding">
+        <div class="container why-container">
+            <div class="why-content">
+                <h2 class="section-title">Why Partner With <span class="text-gradient">YOU CAN</span>?</h2>
+                <p class="section-description">We don't just build software; we build solutions that solve real business problems and create competitive advantages.</p>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fa-solid fa-check-circle text-primary"></i>
+                        <div>
+                            <h4>Agile Methodology</h4>
+                            <p>Fast delivery cycles, transparent communication, and adaptable workflows.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-circle text-primary"></i>
+                        <div>
+                            <h4>Top-Tier Talent</h4>
+                            <p>Our engineers are industry veterans who write clean, maintainable code.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-circle text-primary"></i>
+                        <div>
+                            <h4>Future-Proof Tech Stack</h4>
+                            <p>We use modern, scalable technologies that stand the test of time.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="why-visual glass-panel">
+                <div class="workflow-diagram">
+                    <div class="workflow-step">
+                        <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="step-label">Ideation</div>
+                    </div>
+                    <div class="connector line"></div>
+                    <div class="workflow-step">
+                        <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <div class="step-label">Design</div>
+                    </div>
+                    <div class="connector line"></div>
+                    <div class="workflow-step">
+                        <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="step-label">Develop</div>
+                    </div>
+                    <div class="connector line"></div>
+                    <div class="workflow-step focus">
+                        <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="step-label">Launch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box glass-panel text-center">
+                <h2>Ready to Start Your Next Project?</h2>
+                <p>Let's discuss how YOU CAN TECHNOLOGIES can bring your vision to life.</p>
+                <form class="contact-form" action="https://formsubmit.co/youcantechnologies01@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Contact Message - YOU CAN TECHNOLOGIES">
+                    <div class="form-row">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="Message" placeholder="Tell us about your project" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-large w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="YOU CAN TECHNOLOGIES" class="logo-img footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span class="logo-icon"><i class="fa-solid fa-microchip" style="color: var(--primary); font-size: 1.5rem;"></i></span>
+                        <span class="logo-text" style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem;">YOU CAN <span style="color: var(--primary);">TECHNOLOGIES</span></span>
+                    </div>
+                </a>
+                <p>Empowering businesses through innovative software solutions. Your vision, our code.</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:youcantechnologies01@gmail.com" class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>youcantechnologies01@gmail.com</span>
+                    </a>
+                    <a href="tel:+919150680357" class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 9150680357</span>
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">AI & Data</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 YOU CAN TECHNOLOGIES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Popup Modal -->
+    <div id="quoteModal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button id="closeModalBtn" class="close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3>Get a Free Consultation</h3>
+                <p>Let's discuss how YOU CAN TECHNOLOGIES can transform your business.</p>
+            </div>
+            <div class="google-form-wrapper" style="width: 100%; height: 450px; background: rgba(0,0,0,0.5); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                <!-- 
+                ==========================================================
+                PASTE YOUR GOOGLE FORM "EMBED" LINK IN THE src="" BELOW 
+                ========================================================== 
+                -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfhnaogitfUIKwq8moEGtQl9ZJiougEgQ-ldX48OTboSePdOA/viewform?embedded=true" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    style="background: transparent;">
+                    Loading Google Form...
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
